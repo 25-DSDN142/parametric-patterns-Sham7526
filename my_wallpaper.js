@@ -2,7 +2,6 @@
 let rect_width  = 20;
 let rect_height = 30;
 
-
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(DEVELOP_GLYPH);
   //pWallpaper.output_mode(GRID_WALLPAPER);
@@ -19,7 +18,6 @@ function setup_wallpaper(pWallpaper) {
 function wallpaper_background() {
   background(12, 137, 199); //light honeydew green colour
 }
-
 
 function my_symbol(Shark) { // do not rename this function. Treat this similarly to a Draw function
 
@@ -140,4 +138,16 @@ function my_symbol(Shark) { // do not rename this function. Treat this similarly
   noStroke();
   fill(0);
   ellipse(sharkx + 15, sharky + 95, 2, 2);
+
+}
+
+function Bubbles() {
+   for(var i=0; i<bubbles.length; i++){
+    bubbles[i].display();
+    bubbles[i].move();
+   }
+    
+   stroke(255);
+    strokeWeight(3);
+    ellipse(this.x, this.y, this.r, this.r);
 }
