@@ -1,13 +1,18 @@
 //your parameter variables go here!
 let rect_width  = 20;
 let rect_height = 30;
+// Line 26 BubbleSize Variable
+// Line 41-42 Shark Postion Variable
+// Line 45-47 & Line 51 Shark Color Variable
+// Line 58 Rotate the Shark
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(DEVELOP_GLYPH);
-  //pWallpaper.output_mode(GRID_WALLPAPER);
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
   
-  pWallpaper.resolution(FIT_TO_SCREEN);
-  pWallpaper.show_guide(true); //set this to false when you're ready to print
+  //pWallpaper.resolution(FIT_TO_SCREEN);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 200;
@@ -17,6 +22,21 @@ function setup_wallpaper(pWallpaper) {
 
 function wallpaper_background() {
   background(12, 137, 199); //light honeydew green colour
+}
+noLoop();
+
+function Bubbles(){
+  for (var i=0; i<30; i++){ // repeat the loop a specific number of times to draw a specific amount of ellipses
+    let bubblesize = random(5, 20);
+    if (bubblesize <10){
+      fill(52, 116, 235);
+      noStroke()
+    } else {
+      fill(52, 189, 235);
+      stroke(52, 153, 235);
+    }
+    ellipse(random(0, 200), random(0, 200), bubblesize);
+  }
 }
 
 function my_symbol(Shark) { // do not rename this function. Treat this similarly to a Draw function
@@ -32,6 +52,11 @@ function my_symbol(Shark) { // do not rename this function. Treat this similarly
   let taily = sharky + 100;
   let Sharkcolor = color(rvalue, gvalue, bvalue) //light blue color for the shark
   let backgroundColor = color(12, 137, 199); //light blue color
+
+  Bubbles();
+  
+    translate (100, -50);
+    rotate(45);
 
   // Right Fin of the Shark
   noStroke();
@@ -138,16 +163,5 @@ function my_symbol(Shark) { // do not rename this function. Treat this similarly
   noStroke();
   fill(0);
   ellipse(sharkx + 15, sharky + 95, 2, 2);
-
-}
-
-function Bubbles() {
-   for(var i=0; i<bubbles.length; i++){
-    bubbles[i].display();
-    bubbles[i].move();
-   }
-    
-   stroke(255);
-    strokeWeight(3);
-    ellipse(this.x, this.y, this.r, this.r);
+  
 }
