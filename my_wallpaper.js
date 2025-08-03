@@ -1,13 +1,12 @@
 //your parameter variables go here!
-let rect_width  = 20;
-let rect_height = 30;
-// Line 33 BubbleSize Variable
-// Line 48-42 Shark Postion Variable
-// Line 45-47 & Line 51 Shark Color Variable
-// Line 62 Rotate the Shark
+// Line 36 BubbleSize Variable
+// Line 51-52 Shark Postion Variable
+// Line 55-57 & Line 62 Shark Color Variable
+// Line 75 Rotate the Shark
+// Line 25-27 & Line 64-66 Background color (Both need to be the Same)
 
 //if Statementes
-// Line 34 If bubblesize less than 10 change color
+// Line 37 If bubblesize less than # change color
 
 function setup_wallpaper(pWallpaper) {
   //pWallpaper.output_mode(DEVELOP_GLYPH);
@@ -24,14 +23,18 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(12, 137, 199); //light honeydew green colour
+  let rwallpaper = (255);
+  let gwallpaper = (0);
+  let bwallpaper = (123);
+  background(rwallpaper, gwallpaper, bwallpaper); //Blue
+
 }
 noLoop();
 
 function Bubbles(){
   for (var i=0; i<30; i++){ // repeat the loop a specific number of times to draw a specific amount of ellipses
-    let bubblesize = random(5, 30);
-    if (bubblesize <20){
+    let bubblesize = random(5, 40);
+    if (bubblesize <30){
       fill(52, 116, 235);
       noStroke()
     } else {
@@ -45,25 +48,31 @@ function Bubbles(){
 function my_symbol(Shark) { // do not rename this function. Treat this similarly to a Draw function
   
   //Position of the Shark
-  let sharkx = (50);
-  let sharky = (100);
+  let sharkx = (0);
+  let sharky = (0);
 
   //Color of the Shark
-  let rvalue = random(0, 255);
-  let gvalue = random(0, 255);
-  let bvalue = random(0, 255);
+  let rvalue = random(220, 245);
+  let gvalue = random(100, 220);
+  let bvalue = random(220, 245);
 
   let tailx = sharkx + 170;
   let taily = sharky + 100;
   let Sharkcolor = color(rvalue, gvalue, bvalue) //light blue color for the shark
-  let backgroundColor = color(12, 137, 199); //light blue color
+  
+  
+  //Tail to same color as background
+  let rwallpaper = (255);
+  let gwallpaper = (0);
+  let bwallpaper = (123);
+  let backgroundColor = color(rwallpaper, gwallpaper, bwallpaper); //light blue color
 
   //Calling on the Bubble Function
   Bubbles();
   
   //rotation of the Shark
   translate (100, -50);
-  rotate(45);
+  rotate(90);
 
   // Right Fin of the Shark
   noStroke();

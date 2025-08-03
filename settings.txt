@@ -10,22 +10,37 @@ Your final settings.txt will look something like this when you are finished:
 Wallpaper 1:
 
 //your parameter variables go here!
-let rect_width  = 20;
-let rect_height = 20;
-let paramter1 = 10;
-let paramter2 = true;
-let paramter3 = 50; 
-let paramter4 = 0; 
-let paramter5 = 60;
+// Line 36 BubbleSize Variable
+let bubblesize = random(5, 30);
+// Line 51-52 Shark Postion Variable
+let sharkx = (0);
+let sharky = (0);
+// Line 55-57 & Line 62 Shark Color Variable
+  let rvalue = random(0, 220);
+  let gvalue = random(0, 220);
+  let bvalue = random(0, 245);
+// Line 75 Rotate the Shark
+ rotate(-20);
+// Line 25-27 & Line 64-66 Background color (Both need to be the Same)
+let rwallpaper = (12);
+let gwallpaper = (137);
+let bwallpaper = (199);
+
+//if Statementes
+// Line 37 If bubblesize less than # change color
+if (bubblesize <10)
 
 function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
   pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(NINE_LANDSCAPE);
+  
+  //pWallpaper.resolution(FIT_TO_SCREEN);
+  pWallpaper.resolution(NINE_PORTRAIT);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
   pWallpaper.grid_settings.row_offset  = 50;
 }
 
@@ -34,21 +49,197 @@ function setup_wallpaper(pWallpaper) {
 Wallpaper 2:
 
 //your parameter variables go here!
-let rect_width  = 10;
-let rect_height = 10;
-let paramter1 = 20;
-let paramter2 = false;
-let paramter3 = 50; 
-let paramter4 = 80; 
-let paramter5 = 30;
+// Line 36 BubbleSize Variable
+let bubblesize = random(5, 30);
+// Line 51-52 Shark Postion Variable
+let sharkx = (50);
+let sharky = (50);
+// Line 55-57 & Line 62 Shark Color Variable
+  let rvalue = random(110, 220);
+  let gvalue = random(110, 220);
+  let bvalue = random(245, 245);
+// Line 75 Rotate the Shark
+rotate(0);
+// Line 25-27 & Line 64-66 Background color (Both need to be the Same)
+let rwallpaper = (0);
+let gwallpaper = (0);
+let bwallpaper = (0);
+
+//if Statementes
+// Line 37 If bubblesize less than # change color
+if (bubblesize <25)
 
 function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
   pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(NINE_LANDSCAPE);
+  
+  //pWallpaper.resolution(FIT_TO_SCREEN);
+  pWallpaper.resolution(NINE_PORTRAIT);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 0;
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 50;
 }
+
+/////////////////////////////////
+
+Wallpaper 3:
+
+//your parameter variables go here!
+// Line 36 BubbleSize Variable
+let bubblesize = random(5, 30);
+// Line 51-52 Shark Postion Variable
+let sharkx = (50);
+let sharky = (50);
+// Line 55-57 & Line 62 Shark Color Variable
+let rvalue = random(248, 248);
+let gvalue = random(110, 220);
+let bvalue = random(110, 220);
+// Line 75 Rotate the Shark
+rotate(0);
+// Line 25-27 & Line 64-66 Background color (Both need to be the Same)
+let rwallpaper = (94);
+let gwallpaper = (138);
+let bwallpaper = (181);
+
+//if Statementes
+// Line 37 If bubblesize less than # change color
+if (bubblesize <25)
+
+function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  
+  //pWallpaper.resolution(FIT_TO_SCREEN);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 50;
+}
+
+/////////////////////////////////
+
+Wallpaper 4:
+
+//your parameter variables go here!
+// Line 36 BubbleSize Variable
+let bubblesize = random(5, 30);
+// Line 51-52 Shark Postion Variable
+let sharkx = (50);
+let sharky = (50);
+// Line 55-57 & Line 62 Shark Color Variable
+let rvalue = random(248, 248);
+let gvalue = random(110, 220);
+let bvalue = random(110, 220);
+// Line 75 Rotate the Shark
+rotate(-45);
+// Line 25-27 & Line 64-66 Background color (Both need to be the Same)
+let rwallpaper = (91);
+let gwallpaper = (46);
+let bwallpaper = (176);
+
+//if Statementes
+// Line 37 If bubblesize less than # change color
+if (bubblesize <15)
+
+function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  
+  //pWallpaper.resolution(FIT_TO_SCREEN);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 50;
+}
+
+/////////////////////////////////
+
+Wallpaper 5:
+
+//your parameter variables go here!
+// Line 36 BubbleSize Variable
+let bubblesize = random(5, 30);
+// Line 51-52 Shark Postion Variable
+let sharkx = (80);
+let sharky = (-20);
+// Line 55-57 & Line 62 Shark Color Variable
+let rvalue = random(220, 245);
+let gvalue = random(220, 245);
+let bvalue = random(110, 220);
+// Line 75 Rotate the Shark
+rotate(-120);
+// Line 25-27 & Line 64-66 Background color (Both need to be the Same)
+let rwallpaper = (255);
+let gwallpaper = (123);
+let bwallpaper = (0);
+
+//if Statementes
+// Line 37 If bubblesize less than # change color
+if (bubblesize <15)
+
+function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  
+  //pWallpaper.resolution(FIT_TO_SCREEN);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 50;
+}
+
+/////////////////////////////////
+
+Wallpaper 6
+
+//your parameter variables go here!
+// Line 36 BubbleSize Variable
+let bubblesize = random(5, 40);
+// Line 51-52 Shark Postion Variable
+let sharkx = (0);
+let sharky = (0);
+// Line 55-57 & Line 62 Shark Color Variable
+let rvalue = random(220, 245);
+let gvalue = random(110, 220);
+let bvalue = random(220, 245);
+// Line 75 Rotate the Shark
+rotate(90);
+// Line 25-27 & Line 64-66 Background color (Both need to be the Same)
+let rwallpaper = (255);
+let gwallpaper = (0);
+let bwallpaper = (123);
+
+//if Statementes
+// Line 37 If bubblesize less than # change color
+if (bubblesize <30)
+
+function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  
+  //pWallpaper.resolution(FIT_TO_SCREEN);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 50;
+}
+
+/////////////////////////////////
+
+Wallpaper 7:
+
