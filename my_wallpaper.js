@@ -1,10 +1,13 @@
 //your parameter variables go here!
 let rect_width  = 20;
 let rect_height = 30;
-// Line 26 BubbleSize Variable
-// Line 41-42 Shark Postion Variable
+// Line 33 BubbleSize Variable
+// Line 48-42 Shark Postion Variable
 // Line 45-47 & Line 51 Shark Color Variable
-// Line 58 Rotate the Shark
+// Line 62 Rotate the Shark
+
+//if Statementes
+// Line 34 If bubblesize less than 10 change color
 
 function setup_wallpaper(pWallpaper) {
   //pWallpaper.output_mode(DEVELOP_GLYPH);
@@ -27,8 +30,8 @@ noLoop();
 
 function Bubbles(){
   for (var i=0; i<30; i++){ // repeat the loop a specific number of times to draw a specific amount of ellipses
-    let bubblesize = random(5, 20);
-    if (bubblesize <10){
+    let bubblesize = random(5, 30);
+    if (bubblesize <20){
       fill(52, 116, 235);
       noStroke()
     } else {
@@ -40,10 +43,12 @@ function Bubbles(){
 }
 
 function my_symbol(Shark) { // do not rename this function. Treat this similarly to a Draw function
+  
+  //Position of the Shark
+  let sharkx = (50);
+  let sharky = (100);
 
-  let sharkx = random(0, 10);
-  let sharky = random(-20, 40);
-
+  //Color of the Shark
   let rvalue = random(0, 255);
   let gvalue = random(0, 255);
   let bvalue = random(0, 255);
@@ -53,10 +58,12 @@ function my_symbol(Shark) { // do not rename this function. Treat this similarly
   let Sharkcolor = color(rvalue, gvalue, bvalue) //light blue color for the shark
   let backgroundColor = color(12, 137, 199); //light blue color
 
+  //Calling on the Bubble Function
   Bubbles();
   
-    translate (100, -50);
-    rotate(45);
+  //rotation of the Shark
+  translate (100, -50);
+  rotate(45);
 
   // Right Fin of the Shark
   noStroke();
