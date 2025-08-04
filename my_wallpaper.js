@@ -13,7 +13,7 @@ function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
   
   //pWallpaper.resolution(FIT_TO_SCREEN);
-  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.resolution(A3);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
@@ -23,18 +23,18 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  let rwallpaper = (255);
-  let gwallpaper = (0);
-  let bwallpaper = (123);
-  background(rwallpaper, gwallpaper, bwallpaper); //Blue
+  let rwallpaper = (30);
+  let gwallpaper = (30);
+  let bwallpaper = (100);
+  background(rwallpaper, gwallpaper, bwallpaper); 
 
 }
 noLoop();
 
 function Bubbles(){
   for (var i=0; i<30; i++){ // repeat the loop a specific number of times to draw a specific amount of ellipses
-    let bubblesize = random(5, 40);
-    if (bubblesize <30){
+    let bubblesize = random(5, 30);
+    if (bubblesize <20){
       fill(52, 116, 235);
       noStroke()
     } else {
@@ -52,27 +52,27 @@ function my_symbol(Shark) { // do not rename this function. Treat this similarly
   let sharky = (0);
 
   //Color of the Shark
-  let rvalue = random(220, 245);
-  let gvalue = random(100, 220);
-  let bvalue = random(220, 245);
+  let rvalue = random(110, 220);
+  let gvalue = random(110, 220);
+  let bvalue = random(245, 245);
 
   let tailx = sharkx + 170;
   let taily = sharky + 100;
-  let Sharkcolor = color(rvalue, gvalue, bvalue) //light blue color for the shark
+  let Sharkcolor = color(rvalue, gvalue, bvalue) 
   
   
   //Tail to same color as background
-  let rwallpaper = (255);
-  let gwallpaper = (0);
-  let bwallpaper = (123);
-  let backgroundColor = color(rwallpaper, gwallpaper, bwallpaper); //light blue color
+  let rwallpaper = (30);
+  let gwallpaper = (30);
+  let bwallpaper = (100);
+  let backgroundColor = color(rwallpaper, gwallpaper, bwallpaper);
 
   //Calling on the Bubble Function
   Bubbles();
   
   //rotation of the Shark
   translate (100, -50);
-  rotate(90);
+  rotate(-45);
 
   // Right Fin of the Shark
   noStroke();

@@ -243,3 +243,154 @@ function setup_wallpaper(pWallpaper) {
 
 Wallpaper 7:
 
+//your parameter variables go here!
+// Line 36 BubbleSize Variable
+let bubblesize = random(5, 30);
+// Line 51-52 Shark Postion Variable
+let sharkx = (0);
+let sharky = (0);
+// Line 55-57 & Line 62 Shark Color Variable
+let rvalue = random(220, 245);
+let gvalue = random(110, 220);
+let bvalue = random(220, 245);
+// Line 75 Rotate the Shark
+rotate(0);
+// Line 25-27 & Line 64-66 Background color (Both need to be the Same)
+let rwallpaper = (0);
+let gwallpaper = (0);
+let bwallpaper = (0);
+
+//if Statementes
+// Line 37 If bubblesize less than # change color
+if (bubblesize >15)
+
+function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  
+  //pWallpaper.resolution(FIT_TO_SCREEN);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 50;
+}
+
+/////////////////////////////////
+
+Wallpaper 8:
+
+//your parameter variables go here!
+// Line 36 BubbleSize Variable
+let bubblesize = random(5, 30);
+// Line 51-52 Shark Postion Variable
+let sharkx = (0);
+let sharky = (0);
+// Line 55-57 & Line 62 Shark Color Variable
+let rvalue = random(110, 220);
+let gvalue = random(220, 245);
+let bvalue = random(220, 245);
+// Line 75 Rotate the Shark
+rotate(0);
+// Line 25-27 & Line 64-66 Background color (Both need to be the Same)
+let rwallpaper = (245);
+let gwallpaper = (2);
+let bwallpaper = (73);
+
+//if Statementes
+// Line 37 If bubblesize less than # change color
+if (bubblesize <20)
+
+function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  
+  //pWallpaper.resolution(FIT_TO_SCREEN);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 50;
+}
+
+/////////////////////////////////
+
+Wallpaper 9:
+
+//your parameter variables go here!
+// Line 36 BubbleSize Variable
+let bubblesize = random(5, 35);
+// Line 51-52 Shark Postion Variable
+let sharkx = (0);
+let sharky = (0);
+// Line 55-57 & Line 62 Shark Color Variable
+let rvalue = random(110, 220);
+let gvalue = random(220, 245);
+let bvalue = random(220, 245);
+// Line 75 Rotate the Shark
+rotate(120);
+// Line 25-27 & Line 64-66 Background color (Both need to be the Same)
+let rwallpaper = (255);
+let gwallpaper = (255);
+let bwallpaper = (255);
+
+//if Statementes
+// Line 37 If bubblesize less than # change color
+if (bubblesize <30)
+
+function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  
+  //pWallpaper.resolution(FIT_TO_SCREEN);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 50;
+}
+
+/////////////////////////////////
+
+Wallpaper Final
+
+//your parameter variables go here!
+// Line 36 BubbleSize Variable
+let bubblesize = random(5, 30);
+// Line 51-52 Shark Postion Variable
+let sharkx = (0);
+let sharky = (0);
+// Line 55-57 & Line 62 Shark Color Variable
+let rvalue = random(110, 220);
+let gvalue = random(110, 220);
+let bvalue = random(245, 245);
+// Line 75 Rotate the Shark
+rotate(-45);
+// Line 25-27 & Line 64-66 Background color (Both need to be the Same)
+let rwallpaper = (30);
+let gwallpaper = (30);
+let bwallpaper = (100);
+
+//if Statementes
+// Line 37 If bubblesize less than # change color
+if (bubblesize <20)
+
+function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  
+  //pWallpaper.resolution(FIT_TO_SCREEN);
+  pWallpaper.resolution(A3);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 50;
+}
